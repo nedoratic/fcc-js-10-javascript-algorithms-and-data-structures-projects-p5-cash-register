@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Cash Register</title>
+		<!-- CSS -->
+		<link rel="stylesheet" href="./index.css" />
+		<!-- JS -->
+		<script src="./index.js" defer></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="app">
+				<h1 class="app__title">Cash Register</h1>
+				<label class="app__label" for="purchase-price">Enter Purchase Price in $:</label>
+				<input class="app__input" id="purchase-price" type="number" placeholder="Example: 19.99" required />
+				<label class="app__label" for="payment-amount">Enter Payment Amount in $:</label>
+				<input class="app__input" id="payment-amount" type="number" placeholder="Example: 20.00" required />
+				<label class="app__label" for="penny-input">Pennies in Cash Register:</label>
+				<input class="app__input" id="penny-input" type="number" placeholder="Pennies quantity" />
+				<label class="app__label" for="nickel-input">Nickels in Cash Register:</label>
+				<input class="app__input" id="nickel-input" type="number" placeholder="Nickels quantity" />
+				<label class="app__label" for="dime-input">Dimes in Cash Register:</label>
+				<input class="app__input" id="dime-input" type="number" placeholder="Dimes quantity" />
+				<label class="app__label" for="quarter-input">Quarters in Cash Register:</label>
+				<input class="app__input" id="quarter-input" type="number" placeholder="Quarters quantity" />
+				<label class="app__label" for="one-input">Ones in Cash Register:</label>
+				<input class="app__input" id="one-input" type="number" placeholder="Ones quantity" />
+				<label class="app__label" for="five-input">Fives in Cash Register:</label>
+				<input class="app__input" id="five-input" type="number" placeholder="Fives quantity" />
+				<label class="app__label" for="ten-input">Tens in Cash Register:</label>
+				<input class="app__input" id="ten-input" type="number" placeholder="Tens quantity" />
+				<label class="app__label" for="twenty-input">Twenties in Cash Register:</label>
+				<input class="app__input" id="twenty-input" type="number" placeholder="Twenties quantity" />
+				<label class="app__label" for="one-hundred-input">Hundreds in Cash Register:</label>
+				<input class="app__input" id="one-hundred-input" type="number" placeholder="Hundreds quantity" />
+				<button class="app__button" onclick="calculateChange()">Calculate Change</button>
+				<p class="app__result" id="result">Result will be displayed here.</p>
+			</div>
+		</div>
+	</body>
+</html>

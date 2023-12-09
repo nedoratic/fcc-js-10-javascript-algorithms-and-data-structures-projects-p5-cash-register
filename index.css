@@ -1,0 +1,110 @@
+/* VARIABLES */
+
+:root {
+	--font: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	--color-black: #111111;
+	--color-white: #ffffff;
+	--color-off-white: #f7f7f7;
+	--color-main-light: #4caf50;
+	--color-main-dark: #45a049;
+	--color-result-on: #008000;
+	--color-result-off: #ff0000;
+}
+
+/* RESET */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* GENERAL */
+
+html {
+	font-family: var(--font);
+	background: var(--color-off-white);
+	height: 100vh;
+}
+
+.container {
+	/* LAYOUT */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+/* APP */
+
+.app {
+	/* LAYOUT */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 300px;
+	background: var(--color-white);
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(18, 18, 18, 0.2);
+}
+
+.app__title {
+	/* LAYOUT */
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	/* TYPOGRAPHY */
+	text-align: center;
+}
+
+.app__label {
+	/* LAYOUT */
+	margin-bottom: 0.5em;
+	/* TYPOGRAPHY */
+	font-size: 0.6rem;
+	text-align: center;
+}
+
+.app__input {
+	/* LAYOUT */
+	margin-bottom: 0.5em;
+	border: 1px solid var(--color-black);
+	border-radius: 4px;
+	padding: 0.5em;
+	width: 90%;
+	background: var(--color-off-white);
+	/* TYPOGRAPHY */
+	font-size: 0.6rem;
+	text-align: center;
+}
+
+.app__button {
+	/* LAYOUT */
+	margin-bottom: 0.5em;
+	border: none;
+	border-radius: 4px;
+	padding: 0.5em;
+	width: 90%;
+	background: var(--color-main-light);
+	/* TYPOGRAPHY */
+	color: var(--color-off-white);
+	font-size: 1em;
+	font-weight: 600;
+}
+
+.app__button:hover,
+.app__button:active {
+	/* LAYOUT */
+	background: var(--color-main-dark);
+}
+
+.app__result {
+	/* LAYOUT */
+	margin-bottom: 1em;
+	padding: 0.5em;
+	width: 90%;
+	/* TYPOGRAPHY */
+	font-size: 1em;
+	text-align: center;
+}
